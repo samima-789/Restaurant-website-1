@@ -1,9 +1,11 @@
-let menu = document.querySelector('#menubar');
+let menu = document.querySelector('#menu-bar');
 let navbar = document.querySelector('.navbar');
 
 menu.onclick = () =>{
-	menu.classlist.toggle('fa-times');
-	navbar.classlist.toggle('active');
+
+  menu.classList.toggle('fa-times');
+  navbar.classList.toggle('active');
+
 }
 
 window.onscroll = () =>{
@@ -19,15 +21,8 @@ window.onscroll = () =>{
 
 }
 
-function loader(){
-  document.querySelector('.loader-container').classList.add('fade-out');
-}
 
-function fadeOut(){
-  setInterval(loader, 3000);
-}
 
-window.onload = fadeOut();
 
 
 
